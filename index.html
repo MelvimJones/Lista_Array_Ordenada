@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>CALLBACK</title>
+</head>
+
+<body>
+    <!--teste-->
+    <div class="container">
+        <fieldset class="pe">
+            <div class="adic">
+                <P><strong>Pessoas</strong></P>
+                <input type="text" id="nome" placeholder="Nome">
+                <input style="width: 49px;" type="number" id="idade" placeholder="Idade">
+                <button id="BAdd" onclick="add()">adicionar</button>
+        </fieldset>
+    </div>
+
+    <div class="content">
+        <table id="tabela" border="1">
+            <thead>
+                <th onclick="OrdenarNom()" style="cursor: pointer;" class="nomeTela">NOME</th>
+                <th onclick="OrdenarIda()" style="cursor: pointer;" class="idadeTela">IDADE</th>
+            </thead>
+            <tbody id="inicio"></tbody>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
